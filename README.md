@@ -20,7 +20,7 @@ OBS: You are also able to build your own program. We are gonna make a tutorial f
 
 # Developers
 
-Erick M. L. Pacheco</br >
-Hiago S. Fernandes</br >
-Marcos A. V. Junior</br >
+Erick Matheus Lopes Pacheco</br >
+Hiago Silva Fernandes</br >
+Marcos Antônio Vasconcellos Junior</br >
 Victor Reis
