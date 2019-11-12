@@ -12,7 +12,7 @@ Users are able to:
 
 # Install instructions
 
-1. Clone or download zip our project via github, or just go to the releases tab and download the zip of the most atualized version.</br >
+1. Clone or download zip our project via github, or just go to the releases tab and download the zip of the most updated version.</br >
 2. With the [Intel Quartus Prime](http://fpgasoftware.intel.com/?edition=lite) installed, open the project .qpf file</br >
 3. Compile and simulate the CPU</br >
 
