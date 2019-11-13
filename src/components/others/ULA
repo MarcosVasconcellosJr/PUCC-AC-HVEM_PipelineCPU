@@ -4,10 +4,10 @@ use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
 entity ula is 
-	port (	RS: in std_logic_vector(0 to 15);
-			RT: in std_logic_vector(0 to 15);
+	port (	RS: in std_logic_vector(31 DOWNTO 0);
+			RT: in std_logic_vector(31 DOWNTO 0);
 			ULA_CODE:	in std_logic_vector(0 to 1);
-			ULA_OUT: out std_logic_vector(0 to 15));
+			ULA_OUT: out std_logic_vector(31 DOWNTO 0));
 end ula;
 
 architecture alu of ula is 
@@ -19,7 +19,7 @@ begin
 			when "01" => ULA_OUT <= RS - RT;
 			when "10" => ULA_OUT <= RS and RT;
 			when "11" => ULA_OUT <= RS or RT;
-			when others => ULA_OUT <= "0000000000000000";
+			when others => ULA_OUT <= "00000000000000000000000000000000";
 		end case;
 	end process;
 end alu;
