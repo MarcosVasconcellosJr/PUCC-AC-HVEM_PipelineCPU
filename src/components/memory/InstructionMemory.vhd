@@ -8,19 +8,19 @@ ENTITY inst_mem IS
 END inst_mem;
 
 ARCHITECTURE memory OF inst_mem IS
-    --mem component
+    -- Memory component
     COMPONENT mem
         PORT (
-            CPU_CLOCK, MEM_WRITE : IN STD_LOGIC;
-            MEM_ADDRESS : IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
-            WRITE_DATA : IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
-            READ_DATA : OUT STD_LOGIC_VECTOR(N - 1 DOWNTO 0));
+            CPU_CLOCK, MEM_WRITE : IN STD_LOGIC; -- 
+            MEM_ADDRESS : IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0); -- Our memory address
+            WRITE_DATA : IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0); -- The data that we will write
+            READ_DATA : OUT STD_LOGIC_VECTOR(N - 1 DOWNTO 0)); -- Where the readed data will be stored
     END COMPONENT;
 
 BEGIN
     PROCESS (CPU_CLOCK)
     BEGIN
-    MEM_ROW_DATA : mem PORT MAP (CPU_CLOCK, MEM_WRITE );
+        MEM_ROW_DATA : mem PORT MAP(CPU_CLOCK, MEM_WRITE);
 
         IF (CPU_CLOCK' event AND CPU_CLOCK = '1') THEN
 
