@@ -24,9 +24,15 @@ BEGIN
     BEGIN
         IF (CPU_CLOCK' event AND CPU_CLOCK = '1') THEN
             IF (MEM_WRITE = '1') THEN
-                MEM_ARRAY_DATA(to_integer(unsigned(MEM_ADDRESS))) <= WRITE_DATA;
+                MEM_ARRAY_DATA(to_integer(unsigned(MEM_ADDRESS))) <= WRITE_DATA(8 DOWNTO 0) & WRITE_DATA(15 DOWNTO 9) & ;
             END IF;
         END IF;
     END PROCESS;
-    READ_DATA <= MEM_ARRAY_DATA(to_integer(unsigned(MEM_ADDRESS)));
+    READ_DATA <= MEM_ARRAY_DATA(to_integer(unsigned(MEM_ADDRESS))) &
+                 MEM_ARRAY_DATA(to_integer(unsigned(MEM_ADDRESS)) + 1) & 
+                 MEM_ARRAY_DATA(to_integer(unsigned(MEM_ADDRESS)) + 2) &
+                 MEM_ARRAY_DATA(to_integer(unsigned(MEM_ADDRESS)) + 3);
 END Memory;
+
+
+-- 000000000000 && INST

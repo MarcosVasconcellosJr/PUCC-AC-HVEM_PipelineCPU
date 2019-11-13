@@ -20,8 +20,7 @@ ARCHITECTURE memory OF inst_mem IS
 BEGIN
     PROCESS (CPU_CLOCK)
     BEGIN
-
-    MEM_ROW_DATA : mem PORT MAP (CPU_CLOCK);
+    MEM_ROW_DATA : mem PORT MAP (CPU_CLOCK, MEM_WRITE );
 
         IF (CPU_CLOCK' event AND CPU_CLOCK = '1') THEN
 
