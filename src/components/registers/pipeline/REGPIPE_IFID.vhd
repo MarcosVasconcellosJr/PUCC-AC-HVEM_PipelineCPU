@@ -3,7 +3,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
---This component implements a pipeline register, in this case (is the) first register of the first stage
+-- This component implements a pipeline register, in this case (is the) first register of the first stage
 ENTITY REGPIPE_IFID IS
 	PORT (
 		CLOCK : IN STD_LOGIC;
