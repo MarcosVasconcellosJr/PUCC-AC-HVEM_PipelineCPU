@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "READ_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "READ_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MEM_ADDRESS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MEM_ADDRESS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CPU_CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "MEM_WRITE",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE_DATA[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
