@@ -10,15 +10,15 @@ ENTITY ControlUnit IS
 		  
         -- POSITION: (0: BRANCH, 1: MEMRead, 2: MEMWrite)
         MEM : OUT STD_LOGIC_VECTOR(0 TO 2):= "000"; -- Memory
-		  
+		
         -- POSITION: (REGDst, ALUOp(3bits), ALUSrc)
         EX : OUT STD_LOGIC_VECTOR(0 TO 4):= "00000"; -- Exec
 
         -- SIGNAL FOR COOSE PC INPUT
         SIGNAL_JUMP : OUT STD_LOGIC_VECTOR(0 TO 1):= "00";
 		  
-        OP_CODE : IN STD_LOGIC_VECTOR(5 DOWNTO 0) -- Instruction OP Code
-		  ); 
+        OP_CODE : IN STD_LOGIC_VECTOR(0 TO 5) -- Instruction OP Code
+	    ); 
 END ControlUnit;
 
 ARCHITECTURE UC OF ControlUnit IS

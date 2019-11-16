@@ -7,9 +7,9 @@ ENTITY Generic2to1Mux IS
     GENERIC (DATA_SIZE : INTEGER := 32); -- Generic data size to ensure that we can receive any size data
     PORT (
         CONTROL : IN STD_LOGIC; -- Controller to select the desired data
-        A : IN STD_LOGIC_VECTOR (DATA_SIZE - 1 DOWNTO 0); -- The first data option
-        B : IN STD_LOGIC_VECTOR (DATA_SIZE - 1 DOWNTO 0); -- The second data option
-        X : OUT STD_LOGIC_VECTOR (DATA_SIZE - 1 DOWNTO 0)); -- Will be the selected data
+        A : IN STD_LOGIC_VECTOR ( 0 TO DATA_SIZE - 1); -- The first data option
+        B : IN STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1); -- The second data option
+        X : OUT STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1)); -- Will be the selected data
 END Generic2to1Mux;
 
 ARCHITECTURE MUX OF Generic2to1Mux IS
