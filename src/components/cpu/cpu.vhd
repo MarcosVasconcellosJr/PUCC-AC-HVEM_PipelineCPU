@@ -8,12 +8,7 @@ ENTITY Cpu IS
     PORT ();
 END Cpu;
 
-ARCHITECTURE CPU OF CPU IS
-
-    -- example
-    COMPONENT COMPONENT_NAME
-        PORT ();
-    END COMPONENT;
+ARCHITECTURE CPU OF Cpu IS
 
     -- Control Unit - PORT MAP
     COMPONENT ControlUnit
@@ -54,9 +49,9 @@ ARCHITECTURE CPU OF CPU IS
     COMPONENT Generic2to1Mux
         PORT (
             CONTROL : IN STD_LOGIC;
-            A : IN STD_LOGIC_VECTOR (0 TO 32 - 1);
-            B : IN STD_LOGIC_VECTOR (0 TO 32 - 1);
-            X : OUT STD_LOGIC_VECTOR (0 TO 32 - 1)
+            A : IN STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1);
+            B : IN STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1);
+            X : OUT STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1)
         );
     END COMPONENT;
 
@@ -64,13 +59,13 @@ ARCHITECTURE CPU OF CPU IS
     COMPONENT Generic3to1Mux
         PORT (
             JUMP_SIGNAL : IN STD_LOGIC_VECTOR (0 TO 1);
-            A, B, C : IN STD_LOGIC_VECTOR (DATA_SIZE - 1 DOWNTO 0);
-            X : OUT STD_LOGIC_VECTOR (DATA_SIZE - 1 DOWNTO 0)
+            A, B, C : IN STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1);
+            X : OUT STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1)
         );
     END COMPONENT;
 
-    -- ALU - PORT MAP
-    COMPONENT COMPONENT_NAME
+    -- Alu - PORT MAP
+    COMPONENT Alu
         PORT (
             RS_DATA : IN STD_LOGIC_VECTOR(0 TO 31);
             RT_DATA : IN STD_LOGIC_VECTOR(0 TO 31);
@@ -100,10 +95,10 @@ ARCHITECTURE CPU OF CPU IS
         );
     END COMPONENT;
 
-    --PCIncrement - PORT MAP
-    COMPONENT COMPONENT_NAME
+    -- PCIncrement - PORT MAP
+    COMPONENT PCIncrement
         PORT (
-            PC : IN STD_LOGIC_VECTOR (0 TO 31); -- Our program counter
+            PC : IN STD_LOGIC_VECTOR (0 TO 31);
             X : OUT STD_LOGIC_VECTOR(0 TO 31)
         );
     END COMPONENT;
@@ -147,7 +142,7 @@ ARCHITECTURE CPU OF CPU IS
             IDEX_OUT_MEM : OUT STD_LOGIC_VECTOR(0 TO 2);
             IDEX_OUT_EX : OUT STD_LOGIC_VECTOR(0 TO 4);
             IDEX_OUT_PC : OUT STD_LOGIC_VECTOR(0 TO 31);
-            IDEX_OUT_READ1 : OUT STD_LOGIC_VECTOR(0 TO 31) ;
+            IDEX_OUT_READ1 : OUT STD_LOGIC_VECTOR(0 TO 31);
             IDEX_OUT_READ2 : OUT STD_LOGIC_VECTOR(0 TO 31);
             IDEX_OUT_IMED : OUT STD_LOGIC_VECTOR(0 TO 31);
             IDEX_OUT_RT : OUT STD_LOGIC_VECTOR(0 TO 4);
