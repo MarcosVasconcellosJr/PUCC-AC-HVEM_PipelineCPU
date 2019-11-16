@@ -1,5 +1,5 @@
 Analysis & Synthesis report for HVEM_PipelineCPU
-Fri Nov 01 11:35:44 2019
+Sat Nov 16 08:51:18 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,13 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +42,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Nov 01 11:35:44 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 16 08:51:18 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; HVEM_PipelineCPU                            ;
-; Top-level Entity Name              ; Memory                                      ;
+; Top-level Entity Name              ; SignExtend                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 48                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -59,7 +65,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F23C7      ;                    ;
-; Top-level entity name                                            ; Memory             ; HVEM_PipelineCPU   ;
+; Top-level entity name                                            ; SignExtend         ; HVEM_PipelineCPU   ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -144,7 +150,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -155,24 +161,127 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
++--------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                   ; Library ;
++--------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------+---------+
+; src/components/others/SignExtend.VHD ; yes             ; User VHDL File  ; E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/SignExtend.VHD ;         ;
++--------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+;                                             ;             ;
+; Total combinational functions               ; 0           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 0           ;
+;     -- 3 input functions                    ; 0           ;
+;     -- <=2 input functions                  ; 0           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 0           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 48          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; A[15]~input ;
+; Maximum fan-out                             ; 17          ;
+; Total fan-out                               ; 80          ;
+; Average fan-out                             ; 0.83        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |SignExtend                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |SignExtend         ; SignExtend  ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 48                              ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 01 11:35:34 2019
+    Info: Processing started: Sat Nov 16 08:51:05 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file src/components/memory.vhd
-    Info (12022): Found design unit 1: mem-Memory File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/HVEM_PipelineCPU/src/components/Memory.vhd Line: 18
-    Info (12023): Found entity 1: mem File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/HVEM_PipelineCPU/src/components/Memory.vhd Line: 5
-Error (12007): Top-level design entity "Memory" is undefined
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4782 megabytes
-    Error: Processing ended: Fri Nov 01 11:35:45 2019
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:26
+Info (12021): Found 2 design units, including 1 entities, in source file src/components/others/signextend.vhd
+    Info (12022): Found design unit 1: SignExtend-SE File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/SignExtend.VHD Line: 12
+    Info (12023): Found entity 1: SignExtend File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/SignExtend.VHD Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file src/components/others/shiftleft.vhd
+    Info (12022): Found design unit 1: ShiftLeft-SL File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/ShiftLeft.VHD Line: 12
+    Info (12023): Found entity 1: ShiftLeft File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/ShiftLeft.VHD Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file src/components/others/pcincrement.vhd
+    Info (12022): Found design unit 1: PCincrement-SL File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/PCIncrement.VHD Line: 12
+    Info (12023): Found entity 1: PCincrement File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/PCIncrement.VHD Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file src/components/others/generic2to1mux.vhd
+    Info (12022): Found design unit 1: Generic2to1Mux-MUX File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/Generic2to1Mux.VHD Line: 15
+    Info (12023): Found entity 1: Generic2to1Mux File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/Generic2to1Mux.VHD Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file src/components/others/alu.vhd
+    Info (12022): Found design unit 1: ALU-ALU File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/ALU.VHD Line: 14
+    Info (12023): Found entity 1: ALU File: E:/faculdade/arquitetura/CPU_PIPELINE-AC-PUCC-master/CPU_PIPELINE-AC-PUCC/src/components/others/ALU.VHD Line: 6
+Info (12127): Elaborating entity "SignExtend" for the top level hierarchy
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 32 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4805 megabytes
+    Info: Processing ended: Sat Nov 16 08:51:18 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:24
 
 
