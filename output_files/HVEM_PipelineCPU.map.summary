@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Nov 16 08:51:18 2019
+Analysis & Synthesis Status : Successful - Sun Nov 17 00:00:12 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : HVEM_PipelineCPU
-Top-level Entity Name : SignExtend
+Top-level Entity Name : Generic3to1Mux
 Family : Cyclone IV E
-Total logic elements : 0
-    Total combinational functions : 0
+Total logic elements : 64
+    Total combinational functions : 64
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 48
+Total pins : 130
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
