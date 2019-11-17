@@ -13,6 +13,9 @@ ENTITY ControlUnit IS
 		  
         -- POSITION: (REGDst, ALUOp(3bits), ALUSrc)
         EX : OUT STD_LOGIC_VECTOR(0 TO 4):= "00000"; -- Exec
+
+        -- SIGNAL FOR COOSE PC INPUT
+        SIGNAL_JUMP : OUT STD_LOGIC_VECTOR(0 TO 1):= "00";
 		  
         OP_CODE : IN STD_LOGIC_VECTOR(5 DOWNTO 0) -- Instruction OP Code
 		  ); 
@@ -23,10 +26,10 @@ BEGIN
 	PROCESS(OP_CODE)
 	BEGIN
     CASE OP_CODE IS
-		  WHEN "000000" => -- NOP
-				EX	<= "XXXXX";
-				MEM <= "0X0";
-				WB	<= "X0";
+		WHEN "000000" => -- NOP
+			EX	<= "XXXXX";
+			MEM <= "0X0";
+			WB	<= "X0";
         WHEN "000001" => --add
             EX <= "10000";
             MEM <= "0X0";
@@ -71,12 +74,20 @@ BEGIN
             EX  <="X0010";
             MEM <="1X0";
             WB  <="XX";
-       -- WHEN "001100" => --Jump
-       -- WHEN "001101" => --Jr
+        WHEN "001100" => --Jump
+            SIGNAL_JUMP <="01";
+            EX	 <="XXXXX";
+			MEM <="0X0";
+			WB	 <="00";
+        WHEN "001101" => --Jr
+            SIGNAL_JUMP <="10";
+            EX	 <="XXXXX";
+            MEM <="0X0";
+            WB	 <="00";
        WHEN OTHERS =>
-				EX	 <="XXXXX";
-				MEM <="0X0";
-				WB	 <="00";
+			EX	 <="XXXXX";
+			MEM <="0X0";
+			WB	 <="00";
 			
     END CASE;
 	 END PROCESS;
