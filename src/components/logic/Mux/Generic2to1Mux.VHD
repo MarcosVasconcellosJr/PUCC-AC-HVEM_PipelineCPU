@@ -14,6 +14,6 @@ END Generic2to1Mux;
 
 ARCHITECTURE MUX OF Generic2to1Mux IS
 BEGIN
-    -- If control equals 1 then A, else B
-    X <= A WHEN (CONTROL = '1') ELSE B;
+    -- If control equals 0 then A, else B
+    X <= A WHEN (CONTROL = '0') ELSE B;
 END;
