@@ -1,5 +1,5 @@
 Flow report for HVEM_PipelineCPU
-Sun Nov 17 00:00:12 2019
+Sun Nov 17 18:08:32 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Nov 17 00:00:12 2019       ;
+; Flow Status                        ; Flow Failed - Sun Nov 17 18:08:32 2019      ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; HVEM_PipelineCPU                            ;
-; Top-level Entity Name              ; Generic3to1Mux                              ;
+; Top-level Entity Name              ; Cpu                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F23C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 64                                          ;
-;     Total combinational functions  ; 64                                          ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 130                                         ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,32 +64,32 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/17/2019 00:00:00 ;
+; Start date & time ; 11/17/2019 18:08:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HVEM_PipelineCPU    ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                  ;
-+-------------------------------------+----------------------------------------+------------------+----------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name    ; Section Id     ;
-+-------------------------------------+----------------------------------------+------------------+----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589198.157395600011996         ; --               ; --             ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --               ; --             ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>           ; --             ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --               ; --             ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --               ; --             ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --               ; --             ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --               ; --             ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; Generic3to1Mux ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; Generic3to1Mux ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; Generic3to1Mux ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --               ; --             ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --               ; --             ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --               ; --             ; --             ;
-; TOP_LEVEL_ENTITY                    ; Generic3to1Mux                         ; HVEM_PipelineCPU ; --             ; --             ;
-+-------------------------------------+----------------------------------------+------------------+----------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                               ;
++-------------------------------------+----------------------------------------+------------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 26830039899597.157402488705052         ; --               ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --               ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>           ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --               ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --               ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --               ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --               ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; Cpu         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; Cpu         ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; Cpu         ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --               ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --               ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --               ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; Cpu                                    ; HVEM_PipelineCPU ; --          ; --             ;
++-------------------------------------+----------------------------------------+------------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -97,8 +97,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4806 MB             ; 00:00:23                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 4784 MB             ; 00:00:44                           ;
+; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,7 +107,7 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-RHCCMIK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-PG0SEHT  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
