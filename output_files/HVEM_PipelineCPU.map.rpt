@@ -1,5 +1,5 @@
 Analysis & Synthesis report for HVEM_PipelineCPU
-Sun Nov 17 21:23:31 2019
+Sun Nov 17 22:15:53 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 17 21:23:30 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 17 22:15:53 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; HVEM_PipelineCPU                            ;
 ; Top-level Entity Name              ; Cpu                                         ;
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 0                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 1                                           ;
+; Total pins                         ; 2                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -215,13 +215,13 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 1     ;
+; I/O pins                                    ; 2     ;
 ;                                             ;       ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ;                                             ;       ;
 ; Maximum fan-out node                        ; CLOCK ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 1     ;
+; Total fan-out                               ; 2     ;
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -231,7 +231,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Cpu                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |Cpu                ; Cpu         ; work         ;
+; |Cpu                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |Cpu                ; Cpu         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -323,14 +323,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 1                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 2                           ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -348,7 +351,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 17 21:23:02 2019
+    Info: Processing started: Sun Nov 17 22:15:33 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -362,7 +365,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file src/com
     Info (12022): Found design unit 1: Generic3to1Mux-MUX File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/logic/Mux/Generic3to1Mux.VHD Line: 14
     Info (12023): Found entity 1: Generic3to1Mux File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/logic/Mux/Generic3to1Mux.VHD Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file src/cpu/cpu.vhd
-    Info (12022): Found design unit 1: Cpu-CPU File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 13
+    Info (12022): Found design unit 1: Cpu-CPU File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 14
     Info (12023): Found entity 1: Cpu File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file src/components/registers/reg_pipe/reg_pipe_memwb.vhd
     Info (12022): Found design unit 1: Reg_Pipe_MEMWB-A File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/registers/Reg_Pipe/Reg_Pipe_MEMWB.vhd Line: 25
@@ -410,51 +413,54 @@ Info (12021): Found 2 design units, including 1 entities, in source file src/com
     Info (12022): Found design unit 1: AluControl-AC File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/control/Alu/AluControl.vhd Line: 14
     Info (12023): Found entity 1: AluControl File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/control/Alu/AluControl.vhd Line: 6
 Info (12127): Elaborating entity "Cpu" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Cpu.vhd(241): object "UNUSED" assigned a value but never read File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 241
-Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:INST_MEM" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 328
+Warning (10036): Verilog HDL or VHDL warning at Cpu.vhd(242): object "UNUSED" assigned a value but never read File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 242
+Warning (10034): Output port "INSTRUCTION" at Cpu.vhd(10) has no driver File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 10
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:INST_MEM" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 329
 Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(522): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 522
 Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(523): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 523
 Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(524): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 524
 Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(525): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 525
 Warning (10873): Using initial value X (don't care) for net "MEMORY[140]" at InstructionMemory.vhd(17) File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 17
-Info (12128): Elaborating entity "Mux_2to1_32b" for hierarchy "Mux_2to1_32b:MUX_PC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 330
-Info (12128): Elaborating entity "PCincrement" for hierarchy "PCincrement:PC_INC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 332
-Info (12128): Elaborating entity "ShiftLeft2_26to28" for hierarchy "ShiftLeft2_26to28:SHIFT_IF" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 334
-Info (12128): Elaborating entity "Generic3to1Mux" for hierarchy "Generic3to1Mux:MUX_JUMP" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 338
-Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 340
-Info (12128): Elaborating entity "Reg_Pipe_IFID" for hierarchy "Reg_Pipe_IFID:IFID" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 344
-Info (12128): Elaborating entity "FileRegister" for hierarchy "FileRegister:FILE_REG" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 348
+Info (12128): Elaborating entity "Mux_2to1_32b" for hierarchy "Mux_2to1_32b:MUX_PC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 331
+Info (12128): Elaborating entity "PCincrement" for hierarchy "PCincrement:PC_INC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 333
+Info (12128): Elaborating entity "ShiftLeft2_26to28" for hierarchy "ShiftLeft2_26to28:SHIFT_IF" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 335
+Info (12128): Elaborating entity "Generic3to1Mux" for hierarchy "Generic3to1Mux:MUX_JUMP" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 339
+Info (12128): Elaborating entity "ProgramCounter" for hierarchy "ProgramCounter:PC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 341
+Info (12128): Elaborating entity "Reg_Pipe_IFID" for hierarchy "Reg_Pipe_IFID:IFID" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 345
+Info (12128): Elaborating entity "FileRegister" for hierarchy "FileRegister:FILE_REG" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 349
 Warning (10492): VHDL Process Statement warning at FileRegister.vhd(25): signal "REGWRITE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/registers/FileRegister/FileRegister.vhd Line: 25
 Warning (10492): VHDL Process Statement warning at FileRegister.vhd(25): signal "WRITE_REGISTER" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/registers/FileRegister/FileRegister.vhd Line: 25
-Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:SIGNAL_EXTEND" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 349
-Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:UC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 350
+Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:SIGNAL_EXTEND" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 350
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:UC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 351
 Warning (10631): VHDL Process Statement warning at ControlUnit.vhd(23): inferring latch(es) for signal or variable "SIGNAL_JUMP", which holds its previous value in one or more paths through the process File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/control/ControlUnit/ControlUnit.vhd Line: 23
 Info (10041): Inferred latch for "SIGNAL_JUMP[1]" at ControlUnit.vhd(23) File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/control/ControlUnit/ControlUnit.vhd Line: 23
 Info (10041): Inferred latch for "SIGNAL_JUMP[0]" at ControlUnit.vhd(23) File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/control/ControlUnit/ControlUnit.vhd Line: 23
-Info (12128): Elaborating entity "Reg_Pipe_IDEX" for hierarchy "Reg_Pipe_IDEX:IDEX" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 354
-Info (12128): Elaborating entity "ShiftLeft" for hierarchy "ShiftLeft:SHIFT_LEFT" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 363
-Info (12128): Elaborating entity "Mux_2to1_5b" for hierarchy "Mux_2to1_5b:MUX_REGDST" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 365
-Info (12128): Elaborating entity "AluControl" for hierarchy "AluControl:ALU_CONTROL" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 366
+Info (12128): Elaborating entity "Reg_Pipe_IDEX" for hierarchy "Reg_Pipe_IDEX:IDEX" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 355
+Info (12128): Elaborating entity "ShiftLeft" for hierarchy "ShiftLeft:SHIFT_LEFT" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 364
+Info (12128): Elaborating entity "Mux_2to1_5b" for hierarchy "Mux_2to1_5b:MUX_REGDST" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 366
+Info (12128): Elaborating entity "AluControl" for hierarchy "AluControl:ALU_CONTROL" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 367
 Warning (10631): VHDL Process Statement warning at AluControl.vhd(16): inferring latch(es) for signal or variable "ULA_CODE", which holds its previous value in one or more paths through the process File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/control/Alu/AluControl.vhd Line: 16
 Info (10041): Inferred latch for "ULA_CODE[1]" at AluControl.vhd(16) File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/control/Alu/AluControl.vhd Line: 16
 Info (10041): Inferred latch for "ULA_CODE[0]" at AluControl.vhd(16) File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/control/Alu/AluControl.vhd Line: 16
-Info (12128): Elaborating entity "Alu" for hierarchy "Alu:ADDER_SHIFT2_PC_INC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 367
+Info (12128): Elaborating entity "Alu" for hierarchy "Alu:ADDER_SHIFT2_PC_INC" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 368
 Warning (10492): VHDL Process Statement warning at Alu.vhd(28): signal "AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/logic/Alu/Alu.vhd Line: 28
 Warning (10492): VHDL Process Statement warning at Alu.vhd(34): signal "AUX" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/logic/Alu/Alu.vhd Line: 34
-Info (12128): Elaborating entity "Reg_Pipe_EXMEM" for hierarchy "Reg_Pipe_EXMEM:EXMEM" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 371
-Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:DATA_MEMORY" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 393
-Info (12128): Elaborating entity "Reg_Pipe_MEMWB" for hierarchy "Reg_Pipe_MEMWB:MEMWB" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 397
+Info (12128): Elaborating entity "Reg_Pipe_EXMEM" for hierarchy "Reg_Pipe_EXMEM:EXMEM" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 372
+Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:DATA_MEMORY" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 394
+Info (12128): Elaborating entity "Reg_Pipe_MEMWB" for hierarchy "Reg_Pipe_MEMWB:MEMWB" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 398
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "INSTRUCTION" is stuck at GND File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 10
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CLOCK" File: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 9
-Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4811 megabytes
-    Info: Processing ended: Sun Nov 17 21:23:31 2019
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:01:07
+    Info (21059): Implemented 1 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Sun Nov 17 22:15:53 2019
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:47
 
 
