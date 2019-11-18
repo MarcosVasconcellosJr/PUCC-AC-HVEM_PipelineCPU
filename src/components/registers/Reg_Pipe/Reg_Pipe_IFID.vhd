@@ -1,0 +1,29 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+-- This component implements a pipeline register, in this case (is the) first register of the first stage
+ENTITY Reg_Pipe_IFID IS
+	PORT (
+        CLOCK: IN  STD_LOGIC;
+		-- Portas de entrada (intrução de PC+4 e instrução da intrMem)
+		IN_PC_MAIS_4 : IN STD_LOGIC_VECTOR(0 TO 31);
+		IN_INSTR_MEM : IN STD_LOGIC_VECTOR(0 TO 31);
+		-- Portas de saída (intrução de PC+4 e instrução da intrMem)
+		OUT_PC_MAIS_4 : OUT STD_LOGIC_VECTOR(0 TO 31) := "00000000000000000000000000000000";
+		OUT_INSTR_MEM : OUT STD_LOGIC_VECTOR(0 TO 31) := "00000000000000000000000000000000"
+	);
+END Reg_Pipe_IFID;
+
+ARCHITECTURE REG_PIPE OF Reg_Pipe_IFID IS
+
+BEGIN
+	PROCESS (CLOCK)
+	BEGIN
+		IF (CLOCK'EVENT AND CLOCK = '1') THEN
+			OUT_INSTR_MEM <= IN_INSTR_MEM;
+			OUT_PC_MAIS_4 <= IN_PC_MAIS_4;
+		END IF;
+	END PROCESS;
+END;
