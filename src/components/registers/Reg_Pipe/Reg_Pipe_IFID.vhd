@@ -6,7 +6,7 @@ USE IEEE.NUMERIC_STD.ALL;
 -- This component implements a pipeline register, in this case (is the) first register of the first stage
 ENTITY Reg_Pipe_IFID IS
 	PORT (
-		CLOCK : IN STD_LOGIC;
+        CLOCK: IN  STD_LOGIC;
 		-- Portas de entrada (intrução de PC+4 e instrução da intrMem)
 		IN_PC_MAIS_4 : IN STD_LOGIC_VECTOR(0 TO 31);
 		IN_INSTR_MEM : IN STD_LOGIC_VECTOR(0 TO 31);
@@ -16,7 +16,7 @@ ENTITY Reg_Pipe_IFID IS
 	);
 END Reg_Pipe_IFID;
 
-ARCHITECTURE REG_PIPE OF Reg_Pipe IS
+ARCHITECTURE REG_PIPE OF Reg_Pipe_IFID IS
 
 BEGIN
 	PROCESS (CLOCK)
@@ -26,4 +26,4 @@ BEGIN
 			OUT_PC_MAIS_4 <= IN_PC_MAIS_4;
 		END IF;
 	END PROCESS;
-END REG_PIPE;
+END;

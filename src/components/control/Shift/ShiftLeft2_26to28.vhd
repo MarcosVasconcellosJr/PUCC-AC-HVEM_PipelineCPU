@@ -10,7 +10,7 @@ ENTITY ShiftLeft2_26to28 IS
         );
 END ShiftLeft2_26to28;
 
-ARCHITECTURE SL OF ShiftLeft_26to28 IS
+ARCHITECTURE SL OF ShiftLeft2_26to28 IS
 BEGIN
     X <= A(0 TO 25) & "00"; -- Concats the first 30 bits of our data with "00"
 END;

@@ -5,7 +5,7 @@ USE ieee.numeric_std.ALL;
 
 ENTITY AluControl IS
     PORT (
-        ALU_OP : IN STD_LOGIC_VECTOR(0 TO 1);
+        ALU_OP : IN STD_LOGIC_VECTOR(0 TO 2);
         FUNCT : IN STD_LOGIC_VECTOR(0 TO 5);
         ULA_CODE : OUT STD_LOGIC_VECTOR(0 TO 1)
     );
@@ -61,5 +61,5 @@ BEGIN
         IF (ALU_OP = "111") THEN
             ULA_CODE <= "11";
         END IF;
-    END;
-END;
+    END PROCESS;
+END AC;

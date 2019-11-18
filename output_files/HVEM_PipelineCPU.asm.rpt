@@ -1,5 +1,5 @@
 Assembler report for HVEM_PipelineCPU
-Sun Nov 17 17:57:23 2019
+Sun Nov 17 21:24:01 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/hiago/Desktop/PUCC-AC-HVEM_PipelineCPU/output_files/HVEM_PipelineCPU.sof
+  5. Assembler Device Options: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/output_files/HVEM_PipelineCPU.sof
   6. Assembler Messages
 
 
@@ -37,9 +37,9 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Nov 17 17:57:23 2019 ;
+; Assembler Status      ; Successful - Sun Nov 17 21:24:01 2019 ;
 ; Revision Name         ; HVEM_PipelineCPU                      ;
-; Top-level Entity Name ; Generic3to1Mux                        ;
+; Top-level Entity Name ; Cpu                                   ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F23C7                         ;
 +-----------------------+---------------------------------------+
@@ -52,23 +52,23 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Generated Files                                                         ;
-+-----------------------------------------------------------------------------------+
-; File Name                                                                         ;
-+-----------------------------------------------------------------------------------+
-; C:/Users/hiago/Desktop/PUCC-AC-HVEM_PipelineCPU/output_files/HVEM_PipelineCPU.sof ;
-+-----------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                     ;
++-------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                     ;
++-------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/output_files/HVEM_PipelineCPU.sof ;
++-------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/hiago/Desktop/PUCC-AC-HVEM_PipelineCPU/output_files/HVEM_PipelineCPU.sof ;
-+----------------+--------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                    ;
-+----------------+--------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00592F93                                                                                 ;
-; Checksum       ; 0x00592F93                                                                                 ;
-+----------------+--------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/output_files/HVEM_PipelineCPU.sof ;
++----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                ;
++----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x005836B1                                                                                                                             ;
+; Checksum       ; 0x005836B1                                                                                                                             ;
++----------------+----------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,15 +77,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 17 17:57:17 2019
+    Info: Processing started: Sun Nov 17 21:23:54 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4688 megabytes
-    Info: Processing ended: Sun Nov 17 17:57:23 2019
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4686 megabytes
+    Info: Processing ended: Sun Nov 17 21:24:01 2019
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 

@@ -23,54 +23,54 @@ BEGIN
     PROCESS (INSTRUCTION)
     BEGIN
         CASE INSTRUCTION(0 TO 5) IS
-
+                --ok
             WHEN "000001" => --TYPE R
                 WB <= "10";
                 MEM <= "0X0";
                 EX <= "10100";
-
+                --ok
             WHEN "000010" => --TYPE I ADD
                 WB <= "10";
                 MEM <= "0X0";
                 EX <= "10110";
-
-            WHEN "000010" => --TYPE I SUB
+                --ok
+            WHEN "000011" => --TYPE I SUB
                 WB <= "10";
                 MEM <= "0X0";
                 EX <= "11000";
-
-            WHEN "000010" => --TYPE I AND
+                --ok
+            WHEN "000100" => --TYPE I AND
                 WB <= "10";
                 MEM <= "0X0";
                 EX <= "11010";
-
-            WHEN "000010" => --TYPE I OR
+                --ok
+            WHEN "000101" => --TYPE I OR
                 WB <= "10";
                 MEM <= "0X0";
                 EX <= "11110";
-
-            WHEN "000101" => --LW
+                --ok
+            WHEN "000110" => --LW
                 WB <= "11";
                 MEM <= "010";
                 EX <= "00001";
-
-            WHEN "000110" => --SW
+                --ok
+            WHEN "000111" => --SW
                 WB <= "0X";
                 MEM <= "001";
                 EX <= "00001";
-
-            WHEN "001011" => --Beq
+                --ok
+            WHEN "001000" => --Beq
                 WB <= "XX";
                 MEM <= "1X0";
                 EX <= "X0010";
-
-            WHEN "001100" => --Jump
+                --ok
+            WHEN "001001" => --Jump
                 WB <= "00";
                 MEM <= "0X0";
                 EX <= "XXXXX";
                 SIGNAL_JUMP <= "01";
-
-            WHEN "001101" => --Jr
+                --ok
+            WHEN "001010" => --Jr
                 WB <= "00";
                 MEM <= "0X0";
                 EX <= "XXXXX";
@@ -80,7 +80,7 @@ BEGIN
                 WB <= "X0";
                 MEM <= "0X0";
                 EX <= "XXXXX";
-                
+
             WHEN OTHERS =>
                 WB <= "00";
                 MEM <= "0X0";
