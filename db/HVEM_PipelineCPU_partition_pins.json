@@ -4,11 +4,27 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "DEB_REGS_PC[31]",
+					"name" : "INSTRUCTION_OUT_IFID[31]",
 					"strict" : false
 				},
 				{
-					"name" : "DEB_REGS_PC[30]",
+					"name" : "INSTRUCTION_OUT_IFID[28]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[14]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[10]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[5]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[4]",
 					"strict" : false
 				},
 				{
@@ -129,86 +145,6 @@
 				},
 				{
 					"name" : "DEB_REGS_PC[0]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[31]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[30]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[29]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[28]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[26]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[23]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[22]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[21]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[20]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[18]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[15]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[14]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[13]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[12]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[10]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[7]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[6]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[5]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[4]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[2]",
 					"strict" : false
 				},
 				{

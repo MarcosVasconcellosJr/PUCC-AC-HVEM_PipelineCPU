@@ -12,5 +12,5 @@ END ShiftLeft;
 
 ARCHITECTURE SL OF ShiftLeft IS
 BEGIN
-    X <= A(0 TO 29) & "00"; -- Concats the first 30 bits of our data with "00"
+    X <= A(2 TO 31)& "00" ; -- Concats the first 30 bits of our data with "00"
 END;

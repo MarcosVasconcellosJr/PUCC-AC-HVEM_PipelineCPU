@@ -95,7 +95,7 @@ R21
 R15
 R16
 Ecpu
-Z22 w1574130141
+Z22 w1574172806
 R3
 R7
 R2
@@ -104,18 +104,18 @@ R4
 R5
 R6
 Z24 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
-Z25 dE:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim
+Z25 dC:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/simulation/qsim
 R8
 R9
 l0
 L36
-VMDfZNBXPgVUS3@_0id=aA0
-!s100 cTJ2hfQXn1ULWA0DF]H@m0
+V9f9=]dUKRQieKncdb>6HU2
+!s100 YKIJVjG66F2[dOW^5;fKY2
 R10
 32
-Z26 !s110 1574130142
+Z26 !s110 1574172808
 !i10b 1
-Z27 !s108 1574130142.000000
+Z27 !s108 1574172808.000000
 R13
 R14
 !i113 1
@@ -130,11 +130,11 @@ R4
 R5
 R6
 R24
-DEx4 work 3 cpu 0 22 MDfZNBXPgVUS3@_0id=aA0
-l836
+DEx4 work 3 cpu 0 22 9f9=]dUKRQieKncdb>6HU2
+l188
 L44
-V6nfzIdLQ[DheDeaebie3^3
-!s100 3lkX7DoNz0flkCXA_^>hc3
+Vd9K<Tin]A?a0:Z3Pc>E;W1
+!s100 B:LS5]JABDcb`W;LKaZ`V0
 R10
 32
 R26
@@ -146,7 +146,7 @@ R14
 R15
 R16
 Ecpu_vhd_vec_tst
-Z28 w1574130139
+Z28 w1574172804
 R5
 R6
 R25
@@ -158,29 +158,115 @@ VQ0YIcL]aY35k3<F9DIej43
 !s100 654=zHHGF54m_P]e>k^XL0
 R10
 32
-Z31 !s110 1574130143
+R26
 !i10b 1
 R27
-Z32 !s90 -work|work|TesteCpuInstruction1.vwf.vht|
-Z33 !s107 TesteCpuInstruction1.vwf.vht|
+Z31 !s90 -work|work|TesteCpuInstruction1.vwf.vht|
+Z32 !s107 TesteCpuInstruction1.vwf.vht|
 !i113 1
 R15
 R16
 Acpu_arch
 R5
 R6
-Z34 DEx4 work 15 cpu_vhd_vec_tst 0 22 Q0YIcL]aY35k3<F9DIej43
+Z33 DEx4 work 15 cpu_vhd_vec_tst 0 22 Q0YIcL]aY35k3<F9DIej43
 l46
 L33
-V<_JH`1ln^WJaeFA314Kef1
-!s100 b2>i04b_R8LDDiUPUY;S50
+Z34 V3aVmc@7cUKKOhn;fcK1i@2
+Z35 !s100 PhT6Q4CMRgAUg4@[9G8`c2
 R10
 32
-R31
+R26
 !i10b 1
 R27
+R31
 R32
-R33
+!i113 1
+R15
+R16
+Einstructionmemory
+Z36 w1574170174
+R2
+R3
+R4
+R5
+R6
+R7
+R25
+R8
+R9
+l0
+L34
+V<^;:4F=PlgiUhnWiKQg`80
+!s100 1JAJQcSj5PLe2<a2^;cZc0
+R10
+32
+Z37 !s110 1574170176
+!i10b 1
+Z38 !s108 1574170175.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 17 instructionmemory 0 22 <^;:4F=PlgiUhnWiKQg`80
+l140
+L41
+V?5k0iF][KJPaVHJB]P9Oo2
+!s100 39m6JCg7V<bc;2@EHTJ?Z3
+R10
+32
+R37
+!i10b 1
+R38
+R13
+R14
+!i113 1
+R15
+R16
+Einstructionmemory_vhd_vec_tst
+Z39 w1574170172
+R5
+R6
+R25
+Z40 8testeInstructionmemory.vwf.vht
+Z41 FtesteInstructionmemory.vwf.vht
+l0
+L31
+ViEjTg0:>1n6GYi1dH>L1C2
+!s100 H2FMB0_0;Me>GcP[O[>QT2
+R10
+32
+R37
+!i10b 1
+Z42 !s108 1574170176.000000
+Z43 !s90 -work|work|testeInstructionmemory.vwf.vht|
+Z44 !s107 testeInstructionmemory.vwf.vht|
+!i113 1
+R15
+R16
+Ainstructionmemory_arch
+R5
+R6
+DEx4 work 29 instructionmemory_vhd_vec_tst 0 22 iEjTg0:>1n6GYi1dH>L1C2
+l44
+L33
+VbD0AAAl82ge6VUSaKFz<b3
+!s100 ib2cL:]NT?]^fbkZNczM50
+R10
+32
+R37
+!i10b 1
+R42
+R43
+R44
 !i113 1
 R15
 R16

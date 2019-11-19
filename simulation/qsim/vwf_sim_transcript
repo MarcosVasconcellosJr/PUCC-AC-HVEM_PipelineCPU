@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU --vector_source="E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/TesteCpuInstruction1.vwf" --testbench_file="E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/TesteCpuInstruction1.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU --vector_source="C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/TesteCpuInstruction1.vwf" --testbench_file="C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/TesteCpuInstruction1.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,18 +25,18 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Nov 19 00:22:18 2019
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU --vector_source=E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/TesteCpuInstruction1.vwf --testbench_file=E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/TesteCpuInstruction1.vwf.vht
+    Info: Processing started: Tue Nov 19 11:13:23 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU --vector_source=C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/TesteCpuInstruction1.vwf --testbench_file=C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/TesteCpuInstruction1.vwf.vht
 Info (119006): Selected device EP4CE115F23C7 for design "HVEM_PipelineCPU"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-DEB_REGS_PC[20]" in vector source file when writing test bench files
+gnoring output pin "INSTRUCTION_OUT_IFID[23]" in vector source file when writing test bench files
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/" HVEM_PipelineCPU -c HVEM_PipelineCPU
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/" HVEM_PipelineCPU -c HVEM_PipelineCPU
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -54,14 +54,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Nov 19 00:22:20 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/ HVEM_PipelineCPU -c HVEM_PipelineCPU
+    Info: Processing started: Tue Nov 19 11:13:25 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/ HVEM_PipelineCPU -c HVEM_PipelineCPU
 Info (119006): Selected device EP4CE115F23C7 for design "HVEM_PipelineCPU"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file HVEM_PipelineCPU.vho in folder "E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file HVEM_PipelineCPU.vho in folder "C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4665 megabytes
-    Info: Processing ended: Tue Nov 19 00:22:21 2019
+    Info: Peak virtual memory: 4683 megabytes
+    Info: Processing ended: Tue Nov 19 11:13:26 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -69,7 +69,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/HVEM_PipelineCPU.do generated.
+C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/HVEM_PipelineCPU.do generated.
 
 Completed successfully. 
 
@@ -79,13 +79,15 @@ c:/intelfpga_lite/18.1/modelsim_ase/win32aloem//vsim -c -do HVEM_PipelineCPU.do
 
 Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
+
 # 10.5b
 
 # do HVEM_PipelineCPU.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:22:22 on Nov 19,2019
+# Start time: 11:13:28 on Nov 19,2019
 # vcom -work work HVEM_PipelineCPU.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -99,23 +101,22 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity Cpu
 # -- Compiling architecture structure of Cpu
 
-# End time: 00:22:22 on Nov 19,2019, Elapsed time: 0:00:00
+# End time: 11:13:28 on Nov 19,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:22:22 on Nov 19,2019
+# Start time: 11:13:28 on Nov 19,2019
 # vcom -work work TesteCpuInstruction1.vwf.vht 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Cpu_vhd_vec_tst
 # -- Compiling architecture Cpu_arch of Cpu_vhd_vec_tst
-
-# End time: 00:22:23 on Nov 19,2019, Elapsed time: 0:00:01
+# End time: 11:13:28 on Nov 19,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Cpu_vhd_vec_tst 
-# Start time: 00:22:23 on Nov 19,2019
+# Start time: 11:13:28 on Nov 19,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -132,27 +133,24 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive.cycloneive_io_ibuf(arch)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# Loading cycloneive.cycloneive_ram_block(block_arch)
-# Loading cycloneive.cycloneive_ram_register(reg_arch)
-# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
-# ** Warning: Design size of 91368 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 14379 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#33
 
-# End time: 00:22:25 on Nov 19,2019, Elapsed time: 0:00:02
+# End time: 11:13:29 on Nov 19,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/TesteCpuInstruction1.vwf...
+Reading C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/TesteCpuInstruction1.vwf...
 
-Reading E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/HVEM_PipelineCPU.msim.vcd...
+Reading C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/HVEM_PipelineCPU.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/HVEM_PipelineCPU_20191119002225.sim.vwf
+Writing the resulting VWF to C:/Users/18726471.LAB-INF.000/Desktop/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/HVEM_PipelineCPU_20191119111330.sim.vwf
 
 Finished VCD to VWF conversion.
 
