@@ -79,11 +79,11 @@ R16
 Acontrolunit_arch
 R5
 R6
-Z22 DEx4 work 23 controlunit_vhd_vec_tst 0 22 8M8[Wm[V_8]o`JjD748HZ0
+DEx4 work 23 controlunit_vhd_vec_tst 0 22 8M8[Wm[V_8]o`JjD748HZ0
 l48
 L33
-Z23 VeE=F9h<BLZE8ID^8lgj_B3
-Z24 !s100 5;hC2[`c5L2?LU[^COHXT3
+VeE=F9h<BLZE8ID^8lgj_B3
+!s100 5;hC2[`c5L2?LU[^COHXT3
 R10
 32
 R11
@@ -91,6 +91,96 @@ R11
 R12
 R20
 R21
+!i113 1
+R15
+R16
+Ecpu
+Z22 w1574130141
+R3
+R7
+R2
+Z23 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+R4
+R5
+R6
+Z24 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+Z25 dE:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim
+R8
+R9
+l0
+L36
+VMDfZNBXPgVUS3@_0id=aA0
+!s100 cTJ2hfQXn1ULWA0DF]H@m0
+R10
+32
+Z26 !s110 1574130142
+!i10b 1
+Z27 !s108 1574130142.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R23
+R4
+R5
+R6
+R24
+DEx4 work 3 cpu 0 22 MDfZNBXPgVUS3@_0id=aA0
+l836
+L44
+V6nfzIdLQ[DheDeaebie3^3
+!s100 3lkX7DoNz0flkCXA_^>hc3
+R10
+32
+R26
+!i10b 1
+R27
+R13
+R14
+!i113 1
+R15
+R16
+Ecpu_vhd_vec_tst
+Z28 w1574130139
+R5
+R6
+R25
+Z29 8TesteCpuInstruction1.vwf.vht
+Z30 FTesteCpuInstruction1.vwf.vht
+l0
+L31
+VQ0YIcL]aY35k3<F9DIej43
+!s100 654=zHHGF54m_P]e>k^XL0
+R10
+32
+Z31 !s110 1574130143
+!i10b 1
+R27
+Z32 !s90 -work|work|TesteCpuInstruction1.vwf.vht|
+Z33 !s107 TesteCpuInstruction1.vwf.vht|
+!i113 1
+R15
+R16
+Acpu_arch
+R5
+R6
+Z34 DEx4 work 15 cpu_vhd_vec_tst 0 22 Q0YIcL]aY35k3<F9DIej43
+l46
+L33
+V<_JH`1ln^WJaeFA314Kef1
+!s100 b2>i04b_R8LDDiUPUY;S50
+R10
+32
+R31
+!i10b 1
+R27
+R32
+R33
 !i113 1
 R15
 R16

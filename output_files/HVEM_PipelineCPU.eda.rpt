@@ -1,5 +1,5 @@
 EDA Netlist Writer report for HVEM_PipelineCPU
-Sun Nov 17 22:22:14 2019
+Tue Nov 19 00:22:21 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Nov 17 22:22:14 2019 ;
+; EDA Netlist Writer Status ; Successful - Tue Nov 19 00:22:21 2019 ;
 ; Revision Name             ; HVEM_PipelineCPU                      ;
 ; Top-level Entity Name     ; Cpu                                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                        ;
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                   ;
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/simulation/qsim//HVEM_PipelineCPU.vho ;
-+-----------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                              ;
++-----------------------------------------------------------------------------------------+
+; Generated Files                                                                         ;
++-----------------------------------------------------------------------------------------+
+; E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim//HVEM_PipelineCPU.vho ;
++-----------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,14 +93,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Nov 17 22:22:14 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/" HVEM_PipelineCPU -c HVEM_PipelineCPU
+    Info: Processing started: Tue Nov 19 00:22:20 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/ HVEM_PipelineCPU -c HVEM_PipelineCPU
+Info (119006): Selected device EP4CE115F23C7 for design "HVEM_PipelineCPU"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file HVEM_PipelineCPU.vho in folder "C:/Users/mblabs/Documents/Meus documentos/Projects_SourceCode/VHDL/PUCC-AC-HVEM_PipelineCPU/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file HVEM_PipelineCPU.vho in folder "E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Sun Nov 17 22:22:14 2019
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4665 megabytes
+    Info: Processing ended: Tue Nov 19 00:22:21 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

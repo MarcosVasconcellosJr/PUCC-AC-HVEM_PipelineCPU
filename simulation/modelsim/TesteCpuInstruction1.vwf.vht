@@ -1,0 +1,258 @@
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- *****************************************************************************
+-- This file contains a Vhdl test bench with test vectors .The test vectors     
+-- are exported from a vector file in the Quartus Waveform Editor and apply to  
+-- the top level entity of the current Quartus project .The user can use this   
+-- testbench to simulate his design using a third-party simulation tool .       
+-- *****************************************************************************
+-- Generated on "11/19/2019 00:22:16"
+                                                             
+-- Vhdl Test Bench(with test vectors) for design  :          Cpu
+-- 
+-- Simulation tool : 3rd Party
+-- 
+
+LIBRARY ieee;                                               
+USE ieee.std_logic_1164.all;                                
+
+ENTITY Cpu_vhd_vec_tst IS
+END Cpu_vhd_vec_tst;
+ARCHITECTURE Cpu_arch OF Cpu_vhd_vec_tst IS
+-- constants                                                 
+-- signals                                                   
+SIGNAL CLOCK : STD_LOGIC;
+SIGNAL DEB_REGS_PC : STD_LOGIC_VECTOR(0 TO 31);
+SIGNAL INSTRUCTION_OUT_IFID : STD_LOGIC_VECTOR(0 TO 31);
+COMPONENT Cpu
+	PORT (
+	CLOCK : IN STD_LOGIC;
+	DEB_REGS_PC : BUFFER STD_LOGIC_VECTOR(0 TO 31);
+	INSTRUCTION_OUT_IFID : BUFFER STD_LOGIC_VECTOR(0 TO 31)
+	);
+END COMPONENT;
+BEGIN
+	i1 : Cpu
+	PORT MAP (
+-- list connections between master ports and signals
+	CLOCK => CLOCK,
+	DEB_REGS_PC => DEB_REGS_PC,
+	INSTRUCTION_OUT_IFID => INSTRUCTION_OUT_IFID
+	);
+
+-- CLOCK
+t_prcs_CLOCK: PROCESS
+BEGIN
+LOOP
+	CLOCK <= '0';
+	WAIT FOR 50000 ps;
+	CLOCK <= '1';
+	WAIT FOR 50000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
+END PROCESS t_prcs_CLOCK;
+-- INSTRUCTION_OUT_IFID[31]
+t_prcs_INSTRUCTION_OUT_IFID_31: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(31) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_31;
+-- INSTRUCTION_OUT_IFID[30]
+t_prcs_INSTRUCTION_OUT_IFID_30: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(30) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_30;
+-- INSTRUCTION_OUT_IFID[29]
+t_prcs_INSTRUCTION_OUT_IFID_29: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(29) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_29;
+-- INSTRUCTION_OUT_IFID[28]
+t_prcs_INSTRUCTION_OUT_IFID_28: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(28) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_28;
+-- INSTRUCTION_OUT_IFID[27]
+t_prcs_INSTRUCTION_OUT_IFID_27: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(27) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_27;
+-- INSTRUCTION_OUT_IFID[26]
+t_prcs_INSTRUCTION_OUT_IFID_26: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(26) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_26;
+-- INSTRUCTION_OUT_IFID[25]
+t_prcs_INSTRUCTION_OUT_IFID_25: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(25) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_25;
+-- INSTRUCTION_OUT_IFID[24]
+t_prcs_INSTRUCTION_OUT_IFID_24: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(24) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_24;
+-- INSTRUCTION_OUT_IFID[23]
+t_prcs_INSTRUCTION_OUT_IFID_23: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(23) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_23;
+-- INSTRUCTION_OUT_IFID[22]
+t_prcs_INSTRUCTION_OUT_IFID_22: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(22) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_22;
+-- INSTRUCTION_OUT_IFID[21]
+t_prcs_INSTRUCTION_OUT_IFID_21: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(21) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_21;
+-- INSTRUCTION_OUT_IFID[20]
+t_prcs_INSTRUCTION_OUT_IFID_20: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(20) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_20;
+-- INSTRUCTION_OUT_IFID[19]
+t_prcs_INSTRUCTION_OUT_IFID_19: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(19) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_19;
+-- INSTRUCTION_OUT_IFID[18]
+t_prcs_INSTRUCTION_OUT_IFID_18: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(18) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_18;
+-- INSTRUCTION_OUT_IFID[17]
+t_prcs_INSTRUCTION_OUT_IFID_17: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(17) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_17;
+-- INSTRUCTION_OUT_IFID[16]
+t_prcs_INSTRUCTION_OUT_IFID_16: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(16) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_16;
+-- INSTRUCTION_OUT_IFID[15]
+t_prcs_INSTRUCTION_OUT_IFID_15: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(15) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_15;
+-- INSTRUCTION_OUT_IFID[14]
+t_prcs_INSTRUCTION_OUT_IFID_14: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(14) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_14;
+-- INSTRUCTION_OUT_IFID[13]
+t_prcs_INSTRUCTION_OUT_IFID_13: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(13) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_13;
+-- INSTRUCTION_OUT_IFID[12]
+t_prcs_INSTRUCTION_OUT_IFID_12: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(12) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_12;
+-- INSTRUCTION_OUT_IFID[11]
+t_prcs_INSTRUCTION_OUT_IFID_11: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(11) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_11;
+-- INSTRUCTION_OUT_IFID[10]
+t_prcs_INSTRUCTION_OUT_IFID_10: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(10) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_10;
+-- INSTRUCTION_OUT_IFID[9]
+t_prcs_INSTRUCTION_OUT_IFID_9: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(9) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_9;
+-- INSTRUCTION_OUT_IFID[8]
+t_prcs_INSTRUCTION_OUT_IFID_8: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(8) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_8;
+-- INSTRUCTION_OUT_IFID[7]
+t_prcs_INSTRUCTION_OUT_IFID_7: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(7) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_7;
+-- INSTRUCTION_OUT_IFID[6]
+t_prcs_INSTRUCTION_OUT_IFID_6: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(6) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_6;
+-- INSTRUCTION_OUT_IFID[5]
+t_prcs_INSTRUCTION_OUT_IFID_5: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(5) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_5;
+-- INSTRUCTION_OUT_IFID[4]
+t_prcs_INSTRUCTION_OUT_IFID_4: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(4) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_4;
+-- INSTRUCTION_OUT_IFID[3]
+t_prcs_INSTRUCTION_OUT_IFID_3: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(3) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_3;
+-- INSTRUCTION_OUT_IFID[2]
+t_prcs_INSTRUCTION_OUT_IFID_2: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(2) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_2;
+-- INSTRUCTION_OUT_IFID[1]
+t_prcs_INSTRUCTION_OUT_IFID_1: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(1) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_1;
+-- INSTRUCTION_OUT_IFID[0]
+t_prcs_INSTRUCTION_OUT_IFID_0: PROCESS
+BEGIN
+	INSTRUCTION_OUT_IFID(0) <= 'Z';
+WAIT;
+END PROCESS t_prcs_INSTRUCTION_OUT_IFID_0;
+END Cpu_arch;

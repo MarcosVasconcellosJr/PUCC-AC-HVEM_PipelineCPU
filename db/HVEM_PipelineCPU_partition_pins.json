@@ -2,7 +2,220 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "DEB_REGS_PC[31]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[30]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[29]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[28]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[27]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[22]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[21]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[16]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[31]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[30]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[29]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[28]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[26]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[23]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[22]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[21]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[20]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[18]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[15]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[14]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[13]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[12]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[10]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[7]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[6]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[5]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[4]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
