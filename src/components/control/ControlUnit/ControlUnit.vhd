@@ -25,29 +25,29 @@ BEGIN
         CASE INSTRUCTION(0 TO 5) IS
                 --ok
             WHEN "000001" => --TYPE R
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
                 EX <= "10100";
                 --ok
             WHEN "000010" => --TYPE I ADD
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
-                EX <= "10110";
+                EX <= "00111";
                 --ok
             WHEN "000011" => --TYPE I SUB
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
-                EX <= "11000";
+                EX <= "01001";
                 --ok
             WHEN "000100" => --TYPE I AND
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
-                EX <= "11010";
+                EX <= "01011";
                 --ok
             WHEN "000101" => --TYPE I OR
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
-                EX <= "11110";
+                EX <= "01111";
                 --ok
             WHEN "000110" => --LW
                 WB <= "11";
