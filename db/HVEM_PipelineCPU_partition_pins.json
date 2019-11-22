@@ -4,10 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "INSTRUCTION_OUT_IFID[31]",
-					"strict" : false
-				},
-				{
 					"name" : "INSTRUCTION_OUT_IFID[28]",
 					"strict" : false
 				},
@@ -24,7 +20,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "INSTRUCTION_OUT_IFID[9]",
+					"name" : "INSTRUCTION_OUT_IFID[8]",
 					"strict" : false
 				},
 				{
@@ -33,6 +29,10 @@
 				},
 				{
 					"name" : "INSTRUCTION_OUT_IFID[4]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[3]",
 					"strict" : false
 				},
 				{
@@ -556,7 +556,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "DEB_REG_ULA_IN_1[3]",
+					"name" : "DEB_REG_ULA_IN_1[2]",
 					"strict" : false
 				},
 				{
@@ -701,6 +701,390 @@
 				},
 				{
 					"name" : "DEB_WRITE_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[31]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[30]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[29]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[28]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[27]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[22]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[21]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[16]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[31]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[30]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[29]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[28]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[27]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[22]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[21]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[16]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[31]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[30]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[29]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[28]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[27]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[22]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[21]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[16]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_FILE_REG_3[0]",
 					"strict" : false
 				},
 				{

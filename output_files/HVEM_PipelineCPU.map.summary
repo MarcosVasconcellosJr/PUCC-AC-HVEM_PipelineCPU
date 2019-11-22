@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Nov 19 23:01:12 2019
+Analysis & Synthesis Status : Successful - Fri Nov 22 17:42:52 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : HVEM_PipelineCPU
 Top-level Entity Name : Cpu
 Family : Cyclone IV E
-Total logic elements : 510
-    Total combinational functions : 374
-    Dedicated logic registers : 304
-Total registers : 304
-Total pins : 276
+Total logic elements : 11,376
+    Total combinational functions : 11,206
+    Dedicated logic registers : 3,583
+Total registers : 3583
+Total pins : 308
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
