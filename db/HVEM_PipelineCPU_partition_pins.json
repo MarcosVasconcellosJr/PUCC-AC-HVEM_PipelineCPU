@@ -4,7 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "INSTRUCTION_OUT_IFID[31]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[30]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[29]",
+					"strict" : false
+				},
+				{
 					"name" : "INSTRUCTION_OUT_IFID[28]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[27]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[26]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[25]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[24]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[23]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[22]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[21]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[20]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[19]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[18]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[17]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[16]",
 					"strict" : false
 				},
 				{
@@ -16,11 +76,35 @@
 					"strict" : false
 				},
 				{
+					"name" : "INSTRUCTION_OUT_IFID[13]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[12]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[11]",
+					"strict" : false
+				},
+				{
 					"name" : "INSTRUCTION_OUT_IFID[10]",
 					"strict" : false
 				},
 				{
+					"name" : "INSTRUCTION_OUT_IFID[9]",
+					"strict" : false
+				},
+				{
 					"name" : "INSTRUCTION_OUT_IFID[8]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[7]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[6]",
 					"strict" : false
 				},
 				{
@@ -33,6 +117,26 @@
 				},
 				{
 					"name" : "INSTRUCTION_OUT_IFID[3]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[2]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[1]",
+					"strict" : false
+				},
+				{
+					"name" : "INSTRUCTION_OUT_IFID[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[31]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REGS_PC[30]",
 					"strict" : false
 				},
 				{
@@ -552,11 +656,35 @@
 					"strict" : false
 				},
 				{
+					"name" : "DEB_RegDst[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_RegDst[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_RegDst[0]",
+					"strict" : false
+				},
+				{
 					"name" : "DEB_REG_ULA_IN_1[4]",
 					"strict" : false
 				},
 				{
+					"name" : "DEB_REG_ULA_IN_1[3]",
+					"strict" : false
+				},
+				{
 					"name" : "DEB_REG_ULA_IN_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REG_ULA_IN_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_REG_ULA_IN_1[0]",
 					"strict" : false
 				},
 				{
@@ -573,6 +701,18 @@
 				},
 				{
 					"name" : "DEB_WRITE_REG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_WRITE_REG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_WRITE_REG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEB_WRITE_REG[0]",
 					"strict" : false
 				},
 				{
