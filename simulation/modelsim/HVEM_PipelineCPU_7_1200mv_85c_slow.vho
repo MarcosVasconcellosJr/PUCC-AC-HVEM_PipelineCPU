@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "11/17/2019 21:24:11"
+-- DATE "11/17/2019 22:16:22"
 
 -- 
 -- Device: Altera EP4CE115F23C7 Package FBGA484
@@ -76,12 +76,14 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	Cpu IS
     PORT (
-	CLOCK : IN std_logic
+	CLOCK : IN std_logic;
+	INSTRUCTION : BUFFER std_logic
 	);
 END Cpu;
 
 -- Design Ports Information
--- CLOCK	=>  Location: PIN_D8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- CLOCK	=>  Location: PIN_J6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- INSTRUCTION	=>  Location: PIN_B8,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF Cpu IS
@@ -95,7 +97,9 @@ SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
 SIGNAL ww_CLOCK : std_logic;
+SIGNAL ww_INSTRUCTION : std_logic;
 SIGNAL \CLOCK~input_o\ : std_logic;
+SIGNAL \INSTRUCTION~output_o\ : std_logic;
 
 COMPONENT hard_block
     PORT (
@@ -107,6 +111,7 @@ END COMPONENT;
 BEGIN
 
 ww_CLOCK <= CLOCK;
+INSTRUCTION <= ww_INSTRUCTION;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
@@ -116,7 +121,19 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor);
 
--- Location: IOIBUF_X31_Y73_N1
+-- Location: IOOBUF_X42_Y73_N9
+\INSTRUCTION~output\ : cycloneive_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => GND,
+	devoe => ww_devoe,
+	o => \INSTRUCTION~output_o\);
+
+-- Location: IOIBUF_X0_Y63_N22
 \CLOCK~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -126,6 +143,8 @@ GENERIC MAP (
 PORT MAP (
 	i => ww_CLOCK,
 	o => \CLOCK~input_o\);
+
+ww_INSTRUCTION <= \INSTRUCTION~output_o\;
 END structure;
 
 

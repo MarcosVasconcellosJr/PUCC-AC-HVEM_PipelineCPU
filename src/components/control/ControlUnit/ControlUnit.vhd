@@ -25,44 +25,52 @@ BEGIN
         CASE INSTRUCTION(0 TO 5) IS
                 --ok
             WHEN "000001" => --TYPE R
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
                 EX <= "10100";
+					 SIGNAL_JUMP <= "00";
                 --ok
             WHEN "000010" => --TYPE I ADD
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
-                EX <= "10110";
+                EX <= "00111";
+					 SIGNAL_JUMP <= "00";
                 --ok
             WHEN "000011" => --TYPE I SUB
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
-                EX <= "11000";
+                EX <= "01001";
+					 SIGNAL_JUMP <= "00";
                 --ok
             WHEN "000100" => --TYPE I AND
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
-                EX <= "11010";
+                EX <= "01011";
+					 SIGNAL_JUMP <= "00";
                 --ok
             WHEN "000101" => --TYPE I OR
-                WB <= "10";
+                WB <= "11";
                 MEM <= "0X0";
-                EX <= "11110";
+                EX <= "01111";
+					 SIGNAL_JUMP <= "00";
                 --ok
             WHEN "000110" => --LW
-                WB <= "11";
+                WB <= "10";
                 MEM <= "010";
                 EX <= "00001";
+					 SIGNAL_JUMP <= "00";
                 --ok
             WHEN "000111" => --SW
                 WB <= "0X";
                 MEM <= "001";
                 EX <= "00001";
+					 SIGNAL_JUMP <= "00";
                 --ok
             WHEN "001000" => --Beq
                 WB <= "XX";
                 MEM <= "1X0";
                 EX <= "X0010";
+					 SIGNAL_JUMP <= "00";
                 --ok
             WHEN "001001" => --Jump
                 WB <= "00";
@@ -80,11 +88,12 @@ BEGIN
                 WB <= "X0";
                 MEM <= "0X0";
                 EX <= "XXXXX";
-
+					 SIGNAL_JUMP <= "00";
             WHEN OTHERS =>
                 WB <= "00";
                 MEM <= "0X0";
                 EX <= "XXXXX";
+					 SIGNAL_JUMP <= "00";
 
         END CASE;
     END PROCESS;
