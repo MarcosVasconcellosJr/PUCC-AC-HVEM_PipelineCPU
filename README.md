@@ -1,3 +1,5 @@
+![HVEM 2.0 CPU](main/doc/CPU HVEM 2.0 Datapath.png)
+
 # The project
 
 A pipeline CPU written in VHDL initially developed to a university project from my course.
