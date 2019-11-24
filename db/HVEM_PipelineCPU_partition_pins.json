@@ -32,10 +32,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "INSTRUCTION_OUT_IFID[24]",
-					"strict" : false
-				},
-				{
 					"name" : "INSTRUCTION_OUT_IFID[23]",
 					"strict" : false
 				},
@@ -61,10 +57,6 @@
 				},
 				{
 					"name" : "INSTRUCTION_OUT_IFID[17]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[16]",
 					"strict" : false
 				},
 				{
@@ -96,10 +88,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "INSTRUCTION_OUT_IFID[8]",
-					"strict" : false
-				},
-				{
 					"name" : "INSTRUCTION_OUT_IFID[7]",
 					"strict" : false
 				},
@@ -125,10 +113,6 @@
 				},
 				{
 					"name" : "INSTRUCTION_OUT_IFID[1]",
-					"strict" : false
-				},
-				{
-					"name" : "INSTRUCTION_OUT_IFID[0]",
 					"strict" : false
 				},
 				{
@@ -673,10 +657,6 @@
 				},
 				{
 					"name" : "DEB_REG_ULA_IN_1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "DEB_REG_ULA_IN_1[2]",
 					"strict" : false
 				},
 				{

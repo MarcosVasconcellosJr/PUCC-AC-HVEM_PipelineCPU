@@ -4,26 +4,21 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY Reg_Pipe_MEMWB IS
-
     PORT (
-        -- Portas de entrada
+        -- IN --
         CLOCK : IN STD_LOGIC;
-        MEMWB_IN_WB : IN STD_LOGIC_VECTOR(0 TO 1);
-        MEMWB_IN_RESULT_ULA : IN STD_LOGIC_VECTOR(0 TO 31);
-        MEMWB_IN_REGDST : IN STD_LOGIC_VECTOR(0 TO 4);
-        MEMWB_IN_READ_DATA : IN STD_LOGIC_VECTOR(0 TO 31);
-
-        -- Portas de saída
-        MEMWB_OUT_WB : OUT STD_LOGIC_VECTOR(0 TO 1);
-        MEMWB_OUT_RESULT_ULA : OUT STD_LOGIC_VECTOR(0 TO 31);
-        MEMWB_OUT_REGDST : OUT STD_LOGIC_VECTOR(0 TO 4);
-        MEMWB_OUT_READ_DATA : OUT STD_LOGIC_VECTOR(0 TO 31)
-        );
-
+        MEMWB_IN_WB : IN STD_LOGIC_VECTOR(0 TO 1); -- (0 - RegWrite, 1 - MemToReg)
+        MEMWB_IN_RESULT_ULA : IN STD_LOGIC_VECTOR(0 TO 31); -- ALU RESULT
+        MEMWB_IN_REGDST : IN STD_LOGIC_VECTOR(0 TO 4); -- The ID of destination register
+        MEMWB_IN_READ_DATA : IN STD_LOGIC_VECTOR(0 TO 31); -- Read data from data memory
+        -- OUT --
+        MEMWB_OUT_WB : OUT STD_LOGIC_VECTOR(0 TO 1); -- (0 - RegWrite, 1 - MemToReg)
+        MEMWB_OUT_RESULT_ULA : OUT STD_LOGIC_VECTOR(0 TO 31); -- ALU RESULT
+        MEMWB_OUT_REGDST : OUT STD_LOGIC_VECTOR(0 TO 4); -- The ID of destination register
+        MEMWB_OUT_READ_DATA : OUT STD_LOGIC_VECTOR(0 TO 31)); -- Read data from data memory
 END Reg_Pipe_MEMWB;
 
 ARCHITECTURE A OF Reg_Pipe_MEMWB IS
-
 BEGIN
     PROCESS (CLOCK)
     BEGIN

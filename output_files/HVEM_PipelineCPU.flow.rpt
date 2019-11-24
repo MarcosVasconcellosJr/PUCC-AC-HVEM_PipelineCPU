@@ -1,5 +1,5 @@
 Flow report for HVEM_PipelineCPU
-Fri Nov 22 21:46:37 2019
+Sun Nov 24 15:45:04 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 22 21:46:37 2019       ;
+; Flow Status                        ; Successful - Sun Nov 24 15:45:04 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; HVEM_PipelineCPU                            ;
 ; Top-level Entity Name              ; Cpu                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F23C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 11,620                                      ;
-;     Total combinational functions  ; 11,348                                      ;
-;     Dedicated logic registers      ; 3,746                                       ;
-; Total registers                    ; 3746                                        ;
+; Total logic elements               ; 12,273                                      ;
+;     Total combinational functions  ; 11,663                                      ;
+;     Dedicated logic registers      ; 4,081                                       ;
+; Total registers                    ; 4081                                        ;
 ; Total pins                         ; 308                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 2,048                                       ;
+; Total memory bits                  ; 1,024                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/22/2019 21:45:04 ;
+; Start date & time ; 11/24/2019 15:42:59 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HVEM_PipelineCPU    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+------------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589198.157446630407248         ; --               ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 84440842017362.157462097903712         ; --               ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --               ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>           ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --               ; --          ; eda_simulation ;
@@ -97,11 +97,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:11     ; 1.0                     ; 4901 MB             ; 00:01:17                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4677 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4683 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4692 MB             ; 00:00:04                           ;
-; Total                ; 00:01:19     ; --                      ; --                  ; 00:01:23                           ;
+; Analysis & Synthesis ; 00:00:53     ; 1.0                     ; 4880 MB             ; 00:01:08                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4669 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4680 MB             ; 00:00:03                           ;
+; Total                ; 00:00:59     ; --                      ; --                  ; 00:01:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,10 +110,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-RHCCMIK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-RHCCMIK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-RHCCMIK  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-RHCCMIK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-U126H46  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-U126H46  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-U126H46  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-U126H46  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -121,9 +121,9 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU --vector_source=E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/TesteCpuInstruction2.vwf --testbench_file=E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/modelsim/TesteCpuInstruction2.vwf.vht
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU --vector_source=E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/TesteCpuInstruction2.vwf --testbench_file=E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/TesteCpuInstruction2.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=E:/faculdade/arquitetura/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/ HVEM_PipelineCPU -c HVEM_PipelineCPU
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU --vector_source=C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/InstructionExec.vwf --testbench_file=C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/simulation/modelsim/InstructionExec.vwf.vht
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU --vector_source=C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/InstructionExec.vwf --testbench_file=C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/InstructionExec.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/simulation/qsim/ HVEM_PipelineCPU -c HVEM_PipelineCPU
 
 
 
