@@ -1,4 +1,4 @@
-![HVEM 2.0 CPU](main/doc/CPU HVEM 2.0 Datapath.png)
+![HVEM 2.0 CPU](main/doc/CPU%20HVEM%202.0%20Datapath.png)
 
 # The project
 
