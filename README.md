@@ -20,7 +20,7 @@ Users are able to:
 
 2. With the [Intel Quartus Prime](http://fpgasoftware.intel.com/?edition=lite) installed, open the project .qpf file
 
-3. Compile and simulate the CPU</br >
+3. Compile and simulate the CPU
 
 OBS: You are also able to build your own program. We are gonna make a tutorial for it in the future.
 
