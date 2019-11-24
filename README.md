@@ -1,6 +1,7 @@
 # The project
 
-A pipeline CPU written in VHDL initially developed to a university project from my course. PUC Campinas
+A pipeline CPU written in VHDL initially developed to a university project from my course.
+
 This project is available at: https://drive.google.com/drive/folders/1fFfYwXAvgxo8hYfbIp-3lCpkpvGsdCTs?usp=sharing
 # The HVEM Pipeline CPU
 
