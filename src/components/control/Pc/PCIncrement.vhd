@@ -6,7 +6,7 @@ USE IEEE.NUMERIC_STD.ALL;
 ENTITY PCincrement IS
     PORT (
         PC : IN STD_LOGIC_VECTOR (0 TO 31); -- Our program counter
-        X : OUT STD_LOGIC_VECTOR(0 TO 31):="00000000000000000000000000000000" ); -- Where our program counter + 4 will be stored and returned
+        X : OUT STD_LOGIC_VECTOR(0 TO 31) := "00000000000000000000000000000000"); -- Where our program counter + 4 will be stored and returned
 END PCincrement;
 
 ARCHITECTURE INC OF PCincrement IS

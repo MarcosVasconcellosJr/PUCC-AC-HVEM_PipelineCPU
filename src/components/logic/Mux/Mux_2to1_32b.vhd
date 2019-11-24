@@ -9,8 +9,7 @@ ENTITY Mux_2to1_32b IS
         CONTROL : IN STD_LOGIC; -- Controller to select the desired data
         A : IN STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1); -- The first data option
         B : IN STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1); -- The second data option
-        X : OUT STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1)
-    ); -- Will be the selected data
+        X : OUT STD_LOGIC_VECTOR (0 TO DATA_SIZE - 1)); -- Will be the selected data
 END Mux_2to1_32b;
 
 ARCHITECTURE MUX OF Mux_2to1_32b IS
