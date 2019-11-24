@@ -2,7 +2,7 @@
 
 A pipeline CPU written in VHDL initially developed to a university project from my course.
 
-Also available at: https://drive.google.com/drive/folders/1fFfYwXAvgxo8hYfbIp-3lCpkpvGsdCTs?usp=sharing
+Our project tools lso available at: https://drive.google.com/drive/folders/1fFfYwXAvgxo8hYfbIp-3lCpkpvGsdCTs?usp=sharing
 # The HVEM Pipeline CPU
 
 Users are able to:
