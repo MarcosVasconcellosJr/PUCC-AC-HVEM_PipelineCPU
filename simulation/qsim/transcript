@@ -1,7 +1,7 @@
 # do HVEM_PipelineCPU.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:06:50 on Nov 24,2019
+# Start time: 15:45:05 on Nov 24,2019
 # vcom -work work HVEM_PipelineCPU.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -15,20 +15,20 @@
 # -- Compiling entity Cpu
 # -- Compiling architecture structure of Cpu
 # -- Loading package STANDARD
-# End time: 01:06:54 on Nov 24,2019, Elapsed time: 0:00:04
+# End time: 15:45:09 on Nov 24,2019, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:06:54 on Nov 24,2019
-# vcom -work work TesteCpuInstruction2.vwf.vht 
+# Start time: 15:45:09 on Nov 24,2019
+# vcom -work work InstructionExec.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Cpu_vhd_vec_tst
 # -- Compiling architecture Cpu_arch of Cpu_vhd_vec_tst
-# End time: 01:06:57 on Nov 24,2019, Elapsed time: 0:00:03
+# End time: 15:45:09 on Nov 24,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Cpu_vhd_vec_tst 
-# Start time: 01:06:57 on Nov 24,2019
+# Start time: 15:45:10 on Nov 24,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -48,7 +48,7 @@
 # Loading cycloneive.cycloneive_ram_block(block_arch)
 # Loading cycloneive.cycloneive_ram_register(reg_arch)
 # Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
-# ** Warning: Design size of 1886658 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 1886790 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#34
 # Simulation time: 0 ps
@@ -59,36 +59,22 @@
 # Simulation time: 0 ps
 # Simulation time: 0 ps
 # Simulation time: 0 ps
-# Simulation time: 465000 ps
-# Simulation time: 465000 ps
-# Simulation time: 465000 ps
-# Simulation time: 465000 ps
-# Simulation time: 465000 ps
-# Simulation time: 465000 ps
-# Simulation time: 465000 ps
-# Simulation time: 465000 ps
-# Simulation time: 1080000 ps
-# Simulation time: 1080000 ps
-# Simulation time: 1080000 ps
-# Simulation time: 1080000 ps
-# Simulation time: 1080000 ps
-# Simulation time: 1080000 ps
-# Simulation time: 1080000 ps
-# Simulation time: 1080000 ps
-# Simulation time: 1755000 ps
-# Simulation time: 1755000 ps
-# Simulation time: 1755000 ps
-# Simulation time: 1755000 ps
-# Simulation time: 1755000 ps
-# Simulation time: 1755000 ps
-# Simulation time: 1755000 ps
-# Simulation time: 1755000 ps
-# Simulation time: 2385000 ps
-# Simulation time: 2385000 ps
-# Simulation time: 2385000 ps
-# Simulation time: 2385000 ps
-# Simulation time: 2385000 ps
-# Simulation time: 2385000 ps
-# Simulation time: 2385000 ps
-# End time: 01:08:41 on Nov 24,2019, Elapsed time: 0:01:44
+# Simulation time: 595000 ps
+# Simulation time: 595000 ps
+# Simulation time: 595000 ps
+# Simulation time: 595000 ps
+# Simulation time: 595000 ps
+# Simulation time: 595000 ps
+# Simulation time: 595000 ps
+# Simulation time: 595000 ps
+# Simulation time: 1230000 ps
+# Simulation time: 1230000 ps
+# Simulation time: 1230000 ps
+# Simulation time: 1230000 ps
+# Simulation time: 1230000 ps
+# Simulation time: 1230000 ps
+# Simulation time: 1230000 ps
+# Simulation time: 1230000 ps
+# Simulation time: 1845000 ps
+# End time: 15:46:16 on Nov 24,2019, Elapsed time: 0:01:06
 # Errors: 0, Warnings: 1

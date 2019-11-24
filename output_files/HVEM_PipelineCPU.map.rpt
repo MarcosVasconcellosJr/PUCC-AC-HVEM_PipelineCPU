@@ -1,5 +1,5 @@
 Analysis & Synthesis report for HVEM_PipelineCPU
-Sun Nov 24 01:05:46 2019
+Sun Nov 24 15:43:53 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -58,13 +58,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 24 01:05:45 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 24 15:43:53 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; HVEM_PipelineCPU                            ;
 ; Top-level Entity Name              ; Cpu                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 12,272                                      ;
-;     Total combinational functions  ; 11,662                                      ;
+; Total logic elements               ; 12,273                                      ;
+;     Total combinational functions  ; 11,663                                      ;
 ;     Dedicated logic registers      ; 4,081                                       ;
 ; Total registers                    ; 4081                                        ;
 ; Total pins                         ; 308                                         ;
@@ -222,16 +222,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 12,272      ;
+; Estimated Total logic elements              ; 12,273      ;
 ;                                             ;             ;
-; Total combinational functions               ; 11662       ;
+; Total combinational functions               ; 11663       ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 10703       ;
-;     -- 3 input functions                    ; 725         ;
-;     -- <=2 input functions                  ; 234         ;
+;     -- 4 input functions                    ; 10705       ;
+;     -- 3 input functions                    ; 716         ;
+;     -- <=2 input functions                  ; 242         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 11572       ;
+;     -- normal mode                          ; 11573       ;
 ;     -- arithmetic mode                      ; 90          ;
 ;                                             ;             ;
 ; Total registers                             ; 4081        ;
@@ -245,7 +245,7 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; CLOCK~input ;
 ; Maximum fan-out                             ; 4113        ;
-; Total fan-out                               ; 58345       ;
+; Total fan-out                               ; 58343       ;
 ; Average fan-out                             ; 3.56        ;
 +---------------------------------------------+-------------+
 
@@ -255,16 +255,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Entity Name       ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+-------------------+--------------+
-; |Cpu                                      ; 11662 (1)           ; 4081 (0)                  ; 1024        ; 0            ; 0       ; 0         ; 308  ; 0            ; |Cpu                                                                                 ; Cpu               ; work         ;
+; |Cpu                                      ; 11663 (1)           ; 4081 (0)                  ; 1024        ; 0            ; 0       ; 0         ; 308  ; 0            ; |Cpu                                                                                 ; Cpu               ; work         ;
 ;    |Alu:MAIN_ALU|                         ; 140 (140)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|Alu:MAIN_ALU                                                                    ; Alu               ; work         ;
 ;    |AluControl:ALU_CONTROL|               ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|AluControl:ALU_CONTROL                                                          ; AluControl        ; work         ;
-;    |ControlUnit:UC|                       ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|ControlUnit:UC                                                                  ; ControlUnit       ; work         ;
-;    |DataMemory:DATA_MEMORY|               ; 10860 (10860)       ; 3240 (3240)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|DataMemory:DATA_MEMORY                                                          ; DataMemory        ; work         ;
+;    |ControlUnit:UC|                       ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|ControlUnit:UC                                                                  ; ControlUnit       ; work         ;
+;    |DataMemory:DATA_MEMORY|               ; 10856 (10856)       ; 3240 (3240)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|DataMemory:DATA_MEMORY                                                          ; DataMemory        ; work         ;
 ;    |FileRegister:FILE_REG|                ; 340 (340)           ; 480 (480)                 ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|FileRegister:FILE_REG                                                           ; FileRegister      ; work         ;
 ;       |altsyncram:REGISTERS_rtl_0|        ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|FileRegister:FILE_REG|altsyncram:REGISTERS_rtl_0                                ; altsyncram        ; work         ;
 ;          |altsyncram_esg1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|FileRegister:FILE_REG|altsyncram:REGISTERS_rtl_0|altsyncram_esg1:auto_generated ; altsyncram_esg1   ; work         ;
-;    |Generic3to1Mux:MUX_JUMP|              ; 65 (65)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|Generic3to1Mux:MUX_JUMP                                                         ; Generic3to1Mux    ; work         ;
-;    |InstructionMemory:INST_MEM|           ; 95 (95)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|InstructionMemory:INST_MEM                                                      ; InstructionMemory ; work         ;
+;    |Generic3to1Mux:MUX_JUMP|              ; 63 (63)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|Generic3to1Mux:MUX_JUMP                                                         ; Generic3to1Mux    ; work         ;
+;    |InstructionMemory:INST_MEM|           ; 103 (103)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|InstructionMemory:INST_MEM                                                      ; InstructionMemory ; work         ;
 ;    |Mux_2to1_32b:MUX_ALU_B|               ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|Mux_2to1_32b:MUX_ALU_B                                                          ; Mux_2to1_32b      ; work         ;
 ;    |Mux_2to1_32b:MUX_WB|                  ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|Mux_2to1_32b:MUX_WB                                                             ; Mux_2to1_32b      ; work         ;
 ;    |Mux_2to1_5b:MUX_REGDST|               ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cpu|Mux_2to1_5b:MUX_REGDST                                                          ; Mux_2to1_5b       ; work         ;
@@ -402,7 +402,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 4081  ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Clear  ; 1     ;
 ; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -426,9 +426,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |Cpu|ProgramCounter:PC|PC[30]                  ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |Cpu|ProgramCounter:PC|PC[8]                   ;
-; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; Yes        ; |Cpu|ProgramCounter:PC|PC[7]                   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |Cpu|ProgramCounter:PC|PC[31]                  ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |Cpu|ProgramCounter:PC|PC[6]                   ;
+; 5:1                ; 27 bits   ; 81 LEs        ; 54 LEs               ; 27 LEs                 ; Yes        ; |Cpu|ProgramCounter:PC|PC[8]                   ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |Cpu|DataMemory:DATA_MEMORY|MEMORY[400][4]     ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |Cpu|DataMemory:DATA_MEMORY|MEMORY[399][4]     ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |Cpu|DataMemory:DATA_MEMORY|MEMORY[398][6]     ;
@@ -1018,22 +1018,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 308                         ;
 ; cycloneiii_ff         ; 4081                        ;
 ;     ENA               ; 3690                        ;
+;     SCLR              ; 1                           ;
 ;     SLD               ; 8                           ;
-;     plain             ; 383                         ;
-; cycloneiii_lcell_comb ; 11664                       ;
+;     plain             ; 382                         ;
+; cycloneiii_lcell_comb ; 11665                       ;
 ;     arith             ; 90                          ;
 ;         2 data inputs ; 45                          ;
 ;         3 data inputs ; 45                          ;
-;     normal            ; 11574                       ;
+;     normal            ; 11575                       ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 186                         ;
-;         3 data inputs ; 680                         ;
-;         4 data inputs ; 10703                       ;
+;         2 data inputs ; 194                         ;
+;         3 data inputs ; 671                         ;
+;         4 data inputs ; 10705                       ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.00                       ;
-; Average LUT depth     ; 5.99                        ;
+; Max LUT depth         ; 10.10                       ;
+; Average LUT depth     ; 5.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1052,7 +1053,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 24 01:04:48 2019
+    Info: Processing started: Sun Nov 24 15:42:59 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HVEM_PipelineCPU -c HVEM_PipelineCPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1116,11 +1117,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file src/com
 Info (12127): Elaborating entity "Cpu" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at Cpu.vhd(265): object "UNUSED" assigned a value but never read File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 265
 Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:INST_MEM" File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 351
-Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(649): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 649
-Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(650): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 650
-Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(651): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 651
-Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(652): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 652
-Warning (10873): Using initial value X (don't care) for net "MEMORY[140]" at InstructionMemory.vhd(17) File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 17
+Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(395): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 395
+Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(396): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 396
+Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(397): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 397
+Warning (10492): VHDL Process Statement warning at InstructionMemory.vhd(398): signal "MEMORY" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 398
+Warning (10873): Using initial value X (don't care) for net "MEMORY[84..400]" at InstructionMemory.vhd(17) File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/components/memory/Instruction/InstructionMemory.vhd Line: 17
 Info (12128): Elaborating entity "Mux_2to1_32b" for hierarchy "Mux_2to1_32b:MUX_PC" File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 352
 Info (12128): Elaborating entity "PCincrement" for hierarchy "PCincrement:PC_INC" File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 353
 Info (12128): Elaborating entity "Generic3to1Mux" for hierarchy "Generic3to1Mux:MUX_JUMP" File: C:/Users/erick/Documents/Workspace/Dev/VHDL/PUCC-AC-HVEM_PipelineCPU/src/cpu/Cpu.vhd Line: 354
@@ -1231,15 +1232,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 34 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 12752 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 12753 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 307 output pins
-    Info (21061): Implemented 12412 logic cells
+    Info (21061): Implemented 12413 logic cells
     Info (21064): Implemented 32 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
-    Info: Peak virtual memory: 4877 megabytes
-    Info: Processing ended: Sun Nov 24 01:05:46 2019
-    Info: Elapsed time: 00:00:58
-    Info: Total CPU time (on all processors): 00:01:12
+    Info: Peak virtual memory: 4880 megabytes
+    Info: Processing ended: Sun Nov 24 15:43:53 2019
+    Info: Elapsed time: 00:00:54
+    Info: Total CPU time (on all processors): 00:01:09
 
 
