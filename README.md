@@ -2,8 +2,6 @@
 
 A pipeline CPU written in VHDL initially developed to a university project from my course.
 
-Our project tools also available at: https://drive.google.com/drive/folders/1fFfYwXAvgxo8hYfbIp-3lCpkpvGsdCTs?usp=sharing
-
 # The HVEM Pipeline CPU
 
 ![HVEM 2.0 CPU](main/doc/CPU%20HVEM%202.0%20Datapath.png)
